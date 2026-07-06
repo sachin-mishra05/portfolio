@@ -1,0 +1,198 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+
+
+.navbar{
+height: 70px;
+width: 100%;
+background-color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 30px;
+box-sizing: border-box;
+position: relative;
+}
+
+
+.logo{
+    color: white;
+    margin-left: 20px;
+}
+
+.tagbox{
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+
+
+}
+.tag{
+color: white;
+text-decoration: none;
+transition: 0.3s ease;
+
+}
+
+.tag:hover{
+
+    color: rgb(41, 41, 209);
+    transform: scale(1.1);
+}
+
+.front{
+min-height: calc(100vh - 70px);;
+width:100%;
+background-color:black;
+
+    
+}
+
+
+.profile{
+width: 90%;
+max-width: 1000px;
+margin: auto;
+padding-top: 200px;
+display: flex;
+justify-content: center;
+gap: 80px;
+align-items: center;
+}
+
+.left p{
+color:white;
+font-size:40px;
+font-weight:bold;
+}
+
+.profilecircle{
+height:150px;
+width:150px;
+border-radius:50%;
+}
+
+
+img
+
+{
+height: 150px;
+width: 150px;
+border-radius: 50%;
+}
+
+.button1{
+margin-top:20px;
+display:flex;
+gap:20px;
+}
+
+
+#btn{
+    cursor: pointer;
+    background-color: rgb(1, 1, 87);
+    color: white;
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-right: 0;
+    padding: 8px 15px;
+    border: none;
+}
+
+
+
+
+#btn:hover{
+background-color: rgb(35, 35, 248);
+transform: scale(1.1);
+}
+
+@media (max-width:768px){
+
+.profile{
+flex-direction:column-reverse;
+text-align:center;
+padding-top:50px;
+}
+
+.left p{
+font-size:28px;
+}
+
+.button1{
+justify-content:center;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.profilecircle{
+margin-bottom:30px;
+}
+
+}
+
+.menu-icon{
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+@media (max-width:768px){
+
+    .menu-icon{
+        display: block;
+    }
+
+    .tagbox{
+        display: none;
+    }
+
+    .tagbox.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    gap: 20px;
+    z-index: 1000;
+}
+}
+
+
+
+@media (max-width:768px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        padding: 0 20px;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .tagbox{
+        display: none;
+    }
+    .tag{
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+}
+}

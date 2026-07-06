@@ -1,0 +1,245 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar{
+
+height: 70px;
+width: 100%;
+background-color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 30px;
+box-sizing: border-box;;
+
+}
+
+
+.name{
+
+color: white;
+
+}
+
+
+
+
+.tag{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.tag:hover{
+    color: blue;
+    transform: scale(1.05);
+}
+
+.social{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+
+.fullbod{
+    min-height: 87vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+
+
+    .midlle{
+    width: 95%;
+    max-width: 400px;
+    min-height: 450px;
+    height: auto;
+    background-color: black;
+    border-radius: 15px;
+    border: 2px solid navy;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.profile{
+height: 170px;
+width: 170px;
+border: 2px solid navy;
+border-radius: 50%;
+position:absolute ;
+top: -85px;
+left: 50%;
+transform: translateX(-50%);}
+
+.img1{
+height: 170px;
+width: 170px;
+border-radius: 50%;
+
+}
+
+
+
+
+
+.inpot{
+    width: 85%;
+    min-height: 40px;
+    border-radius: 8px;
+    background-color: rgb(190, 190, 192);
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+
+
+.inpot:hover{
+    transform: scale(1.03);
+}
+
+
+.indev{
+    width: 100%;
+    text-align: center;
+  
+    margin-top: 120px;
+}
+
+
+
+.btn1{
+    display: block;
+    margin: 30px auto;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(192,190,190);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn1:hover{
+    background-color: rgb(2, 2, 109);
+    color: white;
+    transform: scale(1.08);
+}
+
+
+.email{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+.footer{
+min-height: 180px;
+background-color: rgb(29, 29, 29);
+
+
+
+}
+
+
+.linkden{
+min-height: 30px;
+width: 30px;
+border-radius: 50%;
+
+}
+
+
+
+
+.github{
+min-height: 30px;
+width: 30px;
+border-radius: 50%;
+
+
+}
+
+
+
+
+
+
+.leet{
+
+
+min-height: 50px;
+width: 50px;
+border-radius: 50%;
+
+
+
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+@media (max-width: 768px){
+
+    .profile{
+        width: 120px;
+        height: 120px;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .img1{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media (max-width: 768px){
+.midlle{
+    width: 90%;
+    max-width: 400px;
+}
+
+    }
+
+
+
+@media (max-width:768px){
+
+    .navbar{
+        padding: 0 10px;
+    }
+
+    .name{
+        font-size: 16px;
+    }
+
+    .tag{
+        font-size: 14px;
+    }
+}
+@media (max-width:768px){
+    .name{
+        font-size: 18px;
+    }
+}
